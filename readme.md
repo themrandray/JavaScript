@@ -7,16 +7,36 @@
 const myName = "Andrejs";
         const myAge = 36;
         const irStudents = true; 
+-----
+const about = {
+    myName: "Andrejs",
+    myAge: 36,
+    irStudents: true
+}
+console.log(about)
 
 2. Definē mainīgo ar nosaukumu "augļi" un piešķir tam masīvu ar augļiem. Izdrukā masīvu uz konsoles.
 
 const augli = ['kiwi', 'apple', 'mango'];
-        for (let i=0; i <= augli.lenght; i++) {
+        
         console.log(augli);
+-----
+const augli = [20, 'apple', false];
+        for (let i=0; i <= augli.length; i++) {
+        console.log(i);
+        }    
 
 3. Definē mainīgo ar nosaukumu "persona" un piešķir tam objektu ar īpašībām, piemēram, vārds, vecums un vai ir students.
 
-console.log(persona.vards);
+const persona = {
+            vards: 'Andrejs',
+            vecums: 20,
+            irStudents: false
+        };
+        
+        console.log(persona.vards);
+vai
+        console.log(persona ['vards']);
        
         persona.adrese = {pilseta: 'Riga', iela: 'Brivibas iela'};
         console.log(persona.adrese.iela);
@@ -28,12 +48,16 @@ myFunction()
         function myFunction() {
             let x = 5;
             console.log(x);
+            }
+z = myFunction();
 
 5. Ārpus funkcijas definē mainīgo ar nosaukumu "y" un piešķir tam vērtību 10. Izdrukā "y" vērtību funkcijā.
 
-let y = 10;
-        funcion myFunction() {
+    let y = 10;
+    funcion myFunction() {
             console.log(y);
+        }
+z = myFunction();
 
 6. Izveido funkciju, kurā definē mainīgo un piešķir tam vērtību.Izdrukā mainīgā vērtību funkcijā un ārpus tās.
 
